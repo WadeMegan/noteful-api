@@ -1,5 +1,7 @@
 module.exports = {
-    PORT: process.env.PORT || 8000,
+    PORT: process.env.PORT || 8020,
     NODE_ENV: process.env.NODE_ENV || 'development',
-    DB_URL: process.env.BD_URL || 'postgresql://meganwade@localhost/noteful',
+    DATABASE_URL: process.env.DATABASE_URL || 'postgresql://meganwade@localhost/noteful',
+    TEST_DATABASE_URL: process.env.TEST_DATABASE_URL || 'postgresql://meganwade@localhost/notefultest'
+
   }

@@ -1,4 +1,4 @@
-/*const knex = require('knex')
+const knex = require('knex')
 const app = require('../src/app')
 const { makeFoldersArray, makeMaliciousFolder } = require('./folders.fixtures')
 
@@ -10,7 +10,7 @@ describe('folders endpoints',function(){
 
         db = knex({
           client: 'pg',
-          connection: process.env.TEST_DB_URL,
+          connection: process.env.TEST_DATABASE_URL,
         })
         app.set('db', db)
     
@@ -278,4 +278,4 @@ describe('folders endpoints',function(){
         })
       })
 
-})*/
+})
